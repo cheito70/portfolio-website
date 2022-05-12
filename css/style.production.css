@@ -193,8 +193,6 @@ button:hover, button:focus, .button:hover,
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-
-
 }
 
 .grid__item {
@@ -225,7 +223,10 @@ button:hover, button:focus, .button:hover,
   h1 {
       font-size: var(--h1-font-size);
     }
+}
 
+.contact {
+  text-align: center;
 }
 
 .contact {
