@@ -229,6 +229,10 @@ button:hover, button:focus, .button:hover,
   text-align: center;
 }
 
+.contact {
+  text-align: center;
+}
+
 .about {
   text-align: center;
 }
