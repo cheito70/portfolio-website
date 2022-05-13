@@ -29,12 +29,11 @@ Secondary Color (Topaz): #289dd7;
   --h3-font-weight: 700;
   --button-color: #73a926;
   --grid-item-color: #e0e9f5;
-
 }
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header {
@@ -47,25 +46,25 @@ Secondary Color (Topaz): #289dd7;
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: var(--body-font-weight);
-  /* Sets font size to 16 pixels*/
+
+  /* Sets font size to 16 pixels */
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
   padding: var(--body-padding);
-
 }
 
 h1 {
@@ -76,7 +75,6 @@ h1 {
 h2 {
   font-size: var(--h2-font-size);
   font-weight: var(--h2-font-weight);
-
 }
 
 h3 {
@@ -90,7 +88,6 @@ a {
   -webkit-transition: color 1s ease-in-out;
   -o-transition: color 1s ease-in-out;
   transition: color 1s ease-in-out;
-
 }
 
 a:visited {
@@ -103,8 +100,8 @@ a:hover, a:focus {
   text-decoration: none;
   color: var(--hover-color);
   -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 a:active {
@@ -112,20 +109,23 @@ a:active {
   color: #4384bc;
 }
 
-
 .button, button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--button-color);
   color: white;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -133,10 +133,10 @@ a:active {
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover,
-.button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -150,7 +150,6 @@ button:hover, button:focus, .button:hover,
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
-
 }
 
 .profile__portrait {
@@ -158,7 +157,6 @@ button:hover, button:focus, .button:hover,
   margin-right: 40px;
   width: 250px;
   border-radius: 50%;
-
 }
 
 .page-footer {
@@ -168,10 +166,9 @@ button:hover, button:focus, .button:hover,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
-
 }
 
 .navigation-list {
@@ -206,26 +203,32 @@ button:hover, button:focus, .button:hover,
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1 {
-      font-size: var(--h1-font-size);
-    }
 }
 
-.contact {
+h1 {
+  {
+    font-size: var(--h1-font-size);
+  }
+}
+
+.work {
   text-align: center;
 }
 
@@ -251,9 +254,11 @@ button:hover, button:focus, .button:hover,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -263,9 +268,11 @@ button:hover, button:focus, .button:hover,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -273,63 +280,66 @@ button:hover, button:focus, .button:hover,
 
 .sun {
   -webkit-animation: 2s color-change infinite alternate linear;
-          animation: 2s color-change infinite alternate linear;
+  animation: 2s color-change infinite alternate linear;
   -webkit-transform: scale(2.2) infinite alternate linear;
-      -ms-transform: scale(2.2) infinite alternate linear;
-          transform: scale(2.2) infinite alternate linear;
+  -ms-transform: scale(2.2) infinite alternate linear;
+  transform: scale(2.2) infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(300px, 48px);
-            transform: translate(300px, 48px);
+    transform: translate(300px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(300px, 48px);
-            transform: translate(300px, 48px);
+    transform: translate(300px, 48px);
   }
 }
 
-
 .cloud-front {
   -webkit-animation: 14s cloud-move infinite alternate linear;
-          animation: 14s cloud-move infinite alternate linear;
+  animation: 14s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
   -webkit-animation: 14s cloud-move-reverse infinite alternate linear;
-          animation: 14s cloud-move-reverse infinite alternate linear;
+  animation: 14s cloud-move-reverse infinite alternate linear;
 }
