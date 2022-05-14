@@ -223,10 +223,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 h1 {
-  {
-    font-size: var(--h1-font-size);
-  }
+  font-size: var(--h1-font-size);
 }
+
 
 .work {
   text-align: center;
